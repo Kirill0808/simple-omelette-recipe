@@ -1,0 +1,28 @@
+.title {
+   font-family: var(--second-family);
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 100%;
+   color: var(--color-brown-800);
+}
+
+.list {
+   font-family: var(--font-family);
+   font-size: 16px;
+   line-height: 150%;
+   color: var(--color-stone-600);
+}
+
+.list span {
+   font-weight: 600;
+}
+
+li::marker {
+   color: var(--color-rose-800);
+}
+
+.line {
+   border: 1px solid var(--color-stone-150);
+   width: 656px;
+   height: 0px;
+}

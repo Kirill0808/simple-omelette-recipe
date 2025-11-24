@@ -1,0 +1,36 @@
+/* Outfit Regular */
+@font-face {
+   font-family: 'Outfit';
+   src: url('./assets/fonts/Outfit-Regular.ttf') format('ttf');
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* Outfit Bold */
+@font-face {
+   font-family: 'Outfit';
+   src: url('./assets/fonts/Outfit-Bold.ttf') format('ttf');
+   font-weight: 700;
+   font-style: normal;
+}
+
+/* Young Serif Regular */
+@font-face {
+   font-family: 'Young Serif';
+   src: url('./assets/fonts/YoungSerif-Regular.ttf') format('ttf');
+   font-weight: 400;
+   font-style: normal;
+}
+
+#root {
+   margin: 0 auto;
+   border-radius: 24px;
+   padding: 40px;
+   width: 664px;
+   height: 1600px;
+   background: white;
+}
+
+body {
+   background-color: #f3e5d7;
+}

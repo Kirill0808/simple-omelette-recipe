@@ -1,0 +1,25 @@
+.wrapper {
+   background: var(--color-rose-50);
+   border-radius: 12px;
+   padding: 24px;
+   width: 617px;
+   height: 172px;
+}
+
+.title {
+   font-size: 24px;
+   font-weight: 600;
+   color: var(--color-rose-800);
+   margin-bottom: 16px;
+}
+
+.list {
+   font-family: var(--font-family);
+   font-size: 16px;
+   line-height: 150%;
+   color: var(--color-stone-600);
+}
+
+.list span {
+   font-weight: 600;
+}
