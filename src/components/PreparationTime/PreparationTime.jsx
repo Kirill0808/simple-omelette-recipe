@@ -1,22 +1,21 @@
+import recipe from '../../data/recipe.json';
 import styles from './PreparationTime.module.css';
 
-function PreparationTime() {
+export default function PreparationTime() {
    return (
       <div className={styles.wrapper}>
-         <h2 className={styles.title}>Preparation time</h2>
+         <h3 className={styles.title}>Preparation Time</h3>
+
          <ul className={styles.list}>
             <li>
-               <span>Total:</span> Approximately 10 minutes
+               <strong>Total:</strong> {recipe.preparationTime.total}
             </li>
-            <li>
-               <span>Preparation:</span> 5 minutes
-            </li>
-            <li>
-               <span>Cooking:</span> 5 minutes
-            </li>
+            {recipe.preparationTime.details.map((item, i) => (
+               <li key={i}>
+                  <strong>{item.label}:</strong> {item.time}
+               </li>
+            ))}
          </ul>
       </div>
    );
 }
-
-export default PreparationTime;
