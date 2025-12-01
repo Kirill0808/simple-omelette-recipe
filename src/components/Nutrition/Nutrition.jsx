@@ -1,36 +1,33 @@
+import recipe from '../../data/recipe.json';
 import styles from './Nutrition.module.css';
 
-function Nutrition() {
+export default function Nutrition() {
    return (
       <div>
          <h2 className={styles.title}>Nutrition</h2>
-         <p className={styles.description}>
-            The table below shows nutritional values per serving without the additional fillings.
-         </p>
+
          <div className={styles.table}>
             <div className={styles.tableRow}>
-               <div className={styles.left}>Calories</div>
-               <div className={styles.right}>277kcal</div>
+               <span className={styles.left}>Calories</span>
+               <span className={styles.right}>{recipe.nutrition.calories}</span>
             </div>
             <hr className={styles.line} />
             <div className={styles.tableRow}>
-               <div className={styles.left}>Carbs</div>
-               <div className={styles.right}>0g</div>
+               <span className={styles.left}>Carbs</span>
+               <span className={styles.right}>{recipe.nutrition.carbs}</span>
             </div>
             <hr className={styles.line} />
             <div className={styles.tableRow}>
-               <div className={styles.left}>Protein</div>
-               <div className={styles.right}>20g</div>
+               <span className={styles.left}>Protein</span>
+               <span className={styles.right}>{recipe.nutrition.protein}</span>
             </div>
             <hr className={styles.line} />
             <div className={styles.tableRow}>
-               <div className={styles.left}>Fat</div>
-               <div className={styles.right}>22g</div>
+               <span className={styles.left}>Fat</span>
+               <span className={styles.right}>{recipe.nutrition.fat}</span>
             </div>
             <hr className={styles.line} />
          </div>
       </div>
    );
 }
-
-export default Nutrition;
